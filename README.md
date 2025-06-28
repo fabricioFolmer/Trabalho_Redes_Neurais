@@ -2,7 +2,8 @@
 
 ## 1. Visão Geral do Projeto
 
-Este projeto da disciplina de Inteligência Artificial (2025) da UNISC aplica Redes Neurais Artificiais (RNAs) para prever a adesão de clientes de um banco português a um depósito a prazo. Para isso, utilizamos o dataset "Bank Marketing" do UCI Machine Learning Repository, com dados de campanhas de marketing por telefone.
+Este projeto da disciplina de Inteligência Artificial (2025) da UNISC aplica Redes Neurais Artificiais (RNAs) para prever a adesão de clientes de um banco português a uma oferta de depósito a prazo.
+Para isso, utilizamos o dataset "Bank Marketing" do UCI Machine Learning Repository, com dados de campanhas de venda por telefone.
 
 ## 2. Problema a Ser Resolvido
 
@@ -17,32 +18,32 @@ O dataset "Bank Marketing"  possui as seguintes características:
 * **Colunas (Features):** 16, além da variável alvo (`y`).
 * **Período dos Dados:** Maio de 2008 a Novembro de 2010.
 
-**Descrição Detalhada das Colunas:**
+### **Descrição Detalhada das Colunas:**
 
 **Dados do Cliente Bancário:**
 1.  **age** (Idade): Numérico. Idade do cliente.
-2.  **job** (Profissão): Categórico. Tipo de trabalho (`admin.`, `blue-collar`, `entrepreneur`, `housemaid`, `management`, `retired`, `self-employed`, `services`, `student`, `technician`, `unemployed`, `unknown`).
-3.  **marital** (Estado Civil): Categórico (`married`, `divorced`, `single`, `unknown`).
-4.  **education** (Educação): Categórico (`basic.4y`, `basic.6y`, `basic.9y`, `high.school`, `illiterate`, `professional.course`, `university.degree`, `unknown`).
-5.  **default** (Inadimplência): Binário (`yes`, `no`).
-6.  **balance** (Saldo): Numérico. Saldo médio anual da conta em euros.
-7.  **housing** (Financiamento Habitacional): Binário (`yes`, `no`).
-8.  **loan** (Empréstimo Pessoal): Binário (`yes`, `no`).
+1.  **job** (Profissão): Categórico. Tipo de trabalho (`admin.`, `blue-collar`, `entrepreneur`, `housemaid`, `management`, `retired`, `self-employed`, `services`, `student`, `technician`, `unemployed`, `unknown`).
+1.  **marital** (Estado Civil): Categórico (`married`, `divorced`, `single`, `unknown`).
+1.  **education** (Educação): Categórico (`basic.4y`, `basic.6y`, `basic.9y`, `high.school`, `illiterate`, `professional.course`, `university.degree`, `unknown`).
+1.  **default** (Inadimplência): Binário (`yes`, `no`).
+1.  **balance** (Saldo): Numérico. Saldo médio anual da conta em euros.
+1.  **housing** (Financiamento Habitacional): Binário (`yes`, `no`).
+1.  **loan** (Empréstimo Pessoal): Binário (`yes`, `no`).
 
 **Dados do Último Contato da Campanha Atual:**
-9.  **contact** (Tipo de Contato): Categórico (`cellular`, `telephone`, `unknown`).
-10. **day** (Dia do Contato): Numérico (1 a 31).
-11. **month** (Mês do Contato): Categórico (`jan`, `feb`, ..., `dec`).
-12. **duration** (Duração do Contato): Numérico (em segundos). **Nota:** Esta variável não está disponível antes do contato e deve ser usada com cautela para previsões pré-contato.
+1.  **contact** (Tipo de Contato): Categórico (`cellular`, `telephone`, `unknown`).
+1. **day** (Dia do Contato): Numérico (1 a 31).
+1. **month** (Mês do Contato): Categórico (`jan`, `feb`, ..., `dec`).
+1. **duration** (Duração do Contato): Numérico (em segundos). **Nota:** Esta variável não está disponível antes do contato e deve ser usada com cautela para previsões pré-contato.
 
 **Outros Atributos da Campanha:**
-13. **campaign** (Número de Contatos): Numérico. Contatos realizados durante esta campanha para o cliente.
-14. **pdays** (Dias Desde Último Contato): Numérico. Dias desde o último contato em campanha anterior (-1 se nunca contatado).
-15. **previous** (Contatos Anteriores): Numérico. Contatos realizados antes desta campanha.
-16. **poutcome** (Resultado da Campanha Anterior): Categórico (`success`, `failure`, `other`, `unknown`).
+1. **campaign** (Número de Contatos): Numérico. Contatos realizados durante esta campanha para o cliente.
+1. **pdays** (Dias Desde Último Contato): Numérico. Dias desde o último contato em campanha anterior (-1 se nunca contatado).
+1. **previous** (Contatos Anteriores): Numérico. Contatos realizados antes desta campanha.
+1. **poutcome** (Resultado da Campanha Anterior): Categórico (`success`, `failure`, `other`, `unknown`).
 
 **Variável Alvo (Target):**
-17. **y** (Adesão ao Depósito): Binário (`yes`, `no`).
+1. **y** (Adesão ao Depósito): Binário (`yes`, `no`).
 
 ## 4. Tratamento de Dados Realizado
 
